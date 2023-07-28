@@ -12,6 +12,7 @@
   justify-content: center;
   width: 100vw;
   position: fixed;
+  z-index: 1;
 }
 
 .title {
@@ -21,16 +22,28 @@
   font-size: 2em;
 }
 
-.Main-sectin {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-  width: 100vh;
-  margin: 10px 30px;
+.Main-section {
+  position: relative;
+  top: 200px;
 }
 
 .data {
-  flex-basis: 300px;
-  background-color: black;
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 18rem;
+  height: 27rem;
+  display: inline-grid;
+  margin: 1rem 1.8rem;
+  box-shadow: 3px 4px brown;
+}
+
+.image {
+  justify-self: center;
+  height: 12rem;
+  width: 15rem;
+}
+
+p {
+  justify-items: flex-start;
 }
