@@ -24,26 +24,28 @@
 
 .Main-section {
   position: relative;
-  top: 200px;
+  top: 100px;
+  margin-left: 5%;
 }
 
 .data {
-  text-align: center;
   border: grey solid 1px;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 18rem;
   height: 27rem;
   display: inline-grid;
-  margin: 1rem 1.8rem;
+  margin: 1rem 1rem;
   box-shadow: 3px 4px brown;
+  border-radius: 20px;
 }
 
 .image {
   justify-self: center;
-  height: 12rem;
-  width: 15rem;
+  height: 14rem;
+  width: 17rem;
+  border-radius: 20px;
 }
-
-p {
-  justify-items: flex-start;
+.paragraph {
+  font-family: Arial;
+  line-height: normal;
 }

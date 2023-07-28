@@ -5,21 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const createElement = (element) => {
+  // create a div
   let div = document.createElement("div");
   div.classList.add("data");
-
+  //  create image tag
   let img = document.createElement("img");
   img.classList.add("image");
   img.src = element.image;
-
+  // create h3 for the title
   let h3 = document.createElement("h3");
   h3.textContent = element.title;
-
+  // create span for the ingredients
+  let span = document.createElement("span");
+  span.textContent = element.ingredients;
+  // create p tag for description
   let p = document.createElement("p");
+  p.classList.add("paragraph");
   p.textContent = element.description;
 
-  div.append(img, h3, p);
+  div.append(img, h3, span, p);
 
   document.getElementById("collection").appendChild(div);
-  console.log(div);
 };
+
+fetch("https://api.sampleapis.com/coffee/hot")
+  .then((res) => res.json())
+  .then((datas) => console.log(datas));
