@@ -10,7 +10,7 @@
   flex-direction: row;
   background-color: brown;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 1;
 }
@@ -47,5 +47,29 @@
 }
 .paragraph {
   font-family: Arial;
-  line-height: normal;
+  overflow: hidden;
+
+  padding-top: 10px;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+span {
+  padding-top: 10px;
+  color: brown;
+}
+
+button {
+  margin-top: 25px;
+  padding: 5px;
+  background-color: brown;
+  color: white;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: brown;
 }

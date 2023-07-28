@@ -1,3 +1,4 @@
+// request when the website opend
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://api.sampleapis.com/coffee/hot")
     .then((res) => res.json())
@@ -22,12 +23,14 @@ const createElement = (element) => {
   let p = document.createElement("p");
   p.classList.add("paragraph");
   p.textContent = element.description;
-
-  div.append(img, h3, span, p);
-
+  // create a button
+  let btn = document.createElement("button");
+  btn.textContent = 0 + "❤️";
+  // add elements to the dom
+  div.append(img, h3, span, p, btn);
   document.getElementById("collection").appendChild(div);
 };
 
-fetch("https://api.sampleapis.com/coffee/hot")
+fetch("https://api.sampleapis.com/coffee/iced")
   .then((res) => res.json())
   .then((datas) => console.log(datas));
