@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: brown;
+  justify-content: center;
+  width: 100vw;
+  position: fixed;
+}
+
+.title {
+  color: whitesmoke;
+  padding: 15px 0px;
+  text-shadow: 1px 5px 1px blue;
+  font-size: 2em;
+}
+
+.Main-sectin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100vh;
+  margin: 10px 30px;
+}
+
+.data {
+  flex-basis: 300px;
+  background-color: black;
+}
