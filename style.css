@@ -22,6 +22,24 @@
   font-size: 2em;
 }
 
+.dev-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  margin-left: 30px;
+}
+
+.btn-1 {
+  margin: 5px;
+  padding: 5px 20px;
+  background-color: lightgreen;
+
+  color: black;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+}
+
 .Main-section {
   position: relative;
   top: 100px;
@@ -48,7 +66,6 @@
 .paragraph {
   font-family: Arial;
   overflow: hidden;
-
   padding-top: 10px;
 }
 
@@ -61,7 +78,7 @@ span {
   color: brown;
 }
 
-button {
+.like-btn {
   margin-top: 25px;
   padding: 5px;
   background-color: brown;

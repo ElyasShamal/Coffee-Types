@@ -1,4 +1,4 @@
-// request when the website opend
+// request for hot coffee
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://api.sampleapis.com/coffee/hot")
     .then((res) => res.json())
@@ -25,6 +25,7 @@ const createElement = (element) => {
   p.textContent = element.description;
   // create a button
   let btn = document.createElement("button");
+  btn.classList.add("like-btn");
   btn.textContent = 0 + "❤️";
   // add elements to the dom
   div.append(img, h3, span, p, btn);
