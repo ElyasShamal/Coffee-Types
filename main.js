@@ -31,7 +31,40 @@ const createElement = (element) => {
   div.append(img, h3, span, p, btn);
   document.getElementById("collection").appendChild(div);
 };
+// end for hot coffee
 
-fetch("https://api.sampleapis.com/coffee/iced")
-  .then((res) => res.json())
-  .then((datas) => console.log(datas));
+// fetch request for iced coffee
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("https://api.sampleapis.com/coffee/iced")
+    .then((respone) => respone.json())
+    .then((datas) => datas.forEach((data) => createData(data)));
+});
+
+// createData function
+
+const createData = (data) => {
+  // create a new div
+  let div = document.createElement("div");
+  div.classList.add("data");
+
+  let img = document.createElement("img");
+  img.classList.add("image");
+  img.src = data.image;
+
+  let h3 = document.createElement("h3");
+  h3.textContent = data.title;
+
+  let span = document.createElement("span");
+  span.textContent = data.ingredients;
+
+  let p = document.createElement("p");
+  p.textContent = data.description;
+
+  div.append(img, h3, span, p);
+
+  document.getElementById();
+};
+// fetch("https://api.sampleapis.com/coffee/iced")
+//   .then((res) => res.json())
+//   .then((datas) => console.log(datas));
