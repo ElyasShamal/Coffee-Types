@@ -10,11 +10,11 @@ This website has two HTML pages one for Hot Coffee and the second for Iced Coffe
 
 deployed link: => https://elyasshamal-coffeelovers.netlify.app/
 
-Api links
-Hot Coffee => https://api.sampleapis.com/coffee/hot
-Iced Coffee => https://api.sampleapis.com/coffee/iced 
+Api links 
+Hot Coffee => https://api.sampleapis.com/coffee/hot  
+Iced Coffee => https://api.sampleapis.com/coffee/iced   
 
-The  project is open source and distributed under the MIT License. Feel free to modify and use the code according to your needs.
+The  project is open source and distributed under the MIT License. Feel free to modify and use the code according to your needs.  
 
-If you have any questions, feedback, or inquiries, please contact shamalElyas2@gmail.com.
+If you have any questions, feedback, or inquiries, please contact shamalElyas2@gmail.com.  
 
