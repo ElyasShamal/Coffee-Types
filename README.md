@@ -1,6 +1,6 @@
 instruction :
 
-Clone this repository to your local machine =>  https://github.com/ElyasShamal/Coffee-Types 
+Clone this repository to your local machine =>  https://github.com/ElyasShamal/Coffee-Types   
 Open a terminal or command prompt and navigate to the project directory.
 Run index.html with a web browser.
 
