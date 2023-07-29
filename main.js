@@ -59,12 +59,14 @@ const createData = (data) => {
   span.textContent = data.ingredients;
 
   let p = document.createElement("p");
+  p.classList.add("paragraph");
   p.textContent = data.description;
 
-  div.append(img, h3, span, p);
+  let btn = document.createElement("button");
+  btn.classList.add("like-btn");
+  btn.textContent = 0 + "❤️";
 
-  document.getElementById();
+  div.append(img, h3, span, p, btn);
+
+  document.getElementById("iced-Collection").appendChild(div);
 };
-// fetch("https://api.sampleapis.com/coffee/iced")
-//   .then((res) => res.json())
-//   .then((datas) => console.log(datas));
